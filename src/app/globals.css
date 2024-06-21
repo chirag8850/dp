@@ -1,0 +1,171 @@
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 0 0% 3.9%;
+
+      --card: 0 0% 100%;
+      --card-foreground: 0 0% 3.9%;
+
+      --popover: 0 0% 100%;
+      --popover-foreground: 0 0% 3.9%;
+
+      --primary: 0 0% 9%;
+      --primary-foreground: 0 0% 98%;
+
+      --secondary: 0 0% 96.1%;
+      --secondary-foreground: 0 0% 9%;
+
+      --muted: 0 0% 96.1%;
+      --muted-foreground: 0 0% 45.1%;
+
+      --accent: 0 0% 96.1%;
+      --accent-foreground: 0 0% 9%;
+
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 0 0% 98%;
+
+      --border: 0 0% 89.8%;
+      --input: 0 0% 89.8%;
+      --ring: 0 0% 3.9%;
+
+      --radius: 0.5rem;
+    }
+
+    .dark {
+      --background: 0 0% 3.9%;
+      --foreground: 0 0% 98%;
+
+      --card: 0 0% 3.9%;
+      --card-foreground: 0 0% 98%;
+
+      --popover: 0 0% 3.9%;
+      --popover-foreground: 0 0% 98%;
+
+      --primary: 0 0% 98%;
+      --primary-foreground: 0 0% 9%;
+
+      --secondary: 0 0% 14.9%;
+      --secondary-foreground: 0 0% 98%;
+
+      --muted: 0 0% 14.9%;
+      --muted-foreground: 0 0% 63.9%;
+
+      --accent: 0 0% 14.9%;
+      --accent-foreground: 0 0% 98%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 98%;
+
+      --border: 0 0% 14.9%;
+      --input: 0 0% 14.9%;
+      --ring: 0 0% 83.1%;
+    }
+  }
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
+
+  .bg-custom {
+    background-image: url('../../public/bg-img.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg-ai-custom {
+    background-image: url('../../public/bg.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .ai-text {
+    background: linear-gradient("#E6B323","#30B8BB", "#149EAC");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .left-bg{
+    background: #2A5B60;
+
+  }
+
+
+.card:hover h1 {
+  color: white;
+}
+
+.card:hover p {
+  color: rgb(174, 191, 208);
+}
+
+.priceCard {
+  height: 80vh;
+}
+
+.box1 {
+  height: 70%;
+}
+.box2 {
+  height: 30%;
+}
+
+.img-index {
+  z-index: 1;
+}
+
+/* contact page css */
+
+.contact {
+  height: 70%;
+  padding: 0 4rem;
+}
+
+.contactMain {
+  height: 100%;
+  padding: 0 4rem;
+}
+
+.contact-container {
+  margin-top: 3.5rem;
+}
+
+.contact-util {
+  width: 55%;
+}
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 32px;
+  bottom: -24px;
+  width: 2px;
+  background-color: black;
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+.form {
+  width: 90%;
+  margin-top: -13.3rem;
+  margin-left: 2rem;
+}
+
+.form-icon {
+  width: 7rem;
+}
