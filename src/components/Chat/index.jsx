@@ -17,7 +17,8 @@ import Error from "@/components/Error";
 import { Configuration, OpenAIApi } from "openai";
 
 const CHAT_HISTORY_KEY = "chat_history";
-const OPENAI_API_KEY = sk-proj-M18sKlibwUchF0TB862ST3BlbkFJu276EEE0ZkpftdCIcCLu; // Replace with your actual API key
+const OPENAI_API_KEY =
+  "sk-proj-M18sKlibwUchF0TB862ST3BlbkFJu276EEE0ZkpftdCIcCLu";
 const MAX_RETRIES = 5;
 
 function Chat() {
@@ -49,7 +50,7 @@ function Chat() {
     e.preventDefault();
 
     if (inputValue.trim() === "") return;
-    if (OPENAI_API_KEY.trim() === "") {
+    if (!OPENAI_API_KEY || OPENAI_API_KEY.trim() === "") {
       setThinking(false);
       setApiError("OpenAI API key not set. Please check your configuration.");
       return;
