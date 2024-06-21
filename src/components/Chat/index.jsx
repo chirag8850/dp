@@ -17,7 +17,7 @@ import Error from "@/components/Error";
 import { Configuration, OpenAIApi } from "openai";
 
 const CHAT_HISTORY_KEY = "chat_history";
-const OPENAI_API_KEY = process.env.OPENAI_KEY; // Replace with your actual API key
+const OPENAI_API_KEY = sk-proj-M18sKlibwUchF0TB862ST3BlbkFJu276EEE0ZkpftdCIcCLu; // Replace with your actual API key
 const MAX_RETRIES = 5;
 
 function Chat() {
